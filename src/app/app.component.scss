@@ -70,3 +70,54 @@ li {
     width: 400px;
     height: 400px;
 }
+.init7 {
+    margin: 10px;
+    padding: 0;
+}
+.init7 h2 {
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border:  2px solid  #000;
+    width: auto;
+    border-radius: 10px;
+}
+.init7 p{
+    
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 15px;
+    div {
+        img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10%;
+        }
+        h2{
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and  (min-width:400em){
+    .list {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        grid-gap: 15px;
+        div {
+            img {
+                width: 100%;
+                height: 200px;
+                border-radius: 10%;
+            }
+            h2{
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }   
+}

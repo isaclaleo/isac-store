@@ -41,32 +41,43 @@ export class AppComponent {
       name: 'Orcas 1',
       price: 565,
       image: './assets/img/orca1.jpg',
-      category: 'any'
+      category: 'Ocean',
+      desciption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
     },
     {
       name: 'Orcas 2',
       price: 356,
-      image: './assets/img/orca2.jpg'
+      image: './assets/img/orca2.jpg',
+      category: 'Ocean',
+      desciption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
     },
     {
       name: 'Orcas 3',
       price: 34,
-      image: './assets/img/orca3.jpeg'
+      image: './assets/img/orca3.jpeg',
+      category: 'Ocean',
+      desciption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
     },
     {
       name: 'Orcas 4',
       price: 23,
-      image: './assets/img/orca4.jpeg'
+      image: './assets/img/orca4.jpeg',
+      category: 'Ocean',
+      desciption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
     },
     {
-      name: 'Oras 5',
+      name: 'Orcas 5',
       price: 34,
-      image: './assets/img/orca5.jpeg'
+      image: './assets/img/orca5.jpeg',
+      category: 'Ocean',
+      desciption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
     },
     {
       name: 'Orcas 6',
       price: 3434,
-      image: './assets/img/orca6.jpeg'
+      image: './assets/img/orca6.jpeg',
+      category: 'Ocean',
+      desciption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
     }
   ]
   
