@@ -4,3 +4,21 @@
     overflow: auto;
     background: aqua;
 }
+li {
+    list-style: none;
+}
+
+.green {
+    background: green;
+    border-radius: 10%;
+
+}
+.red {
+    background: red;
+    border-radius: 10%;
+}
+
+.imgs {
+    width: 400px;
+    height: 400px;
+}

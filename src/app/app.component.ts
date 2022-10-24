@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from './product.model';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,61 @@ export class AppComponent {
     name: 'fidel',
     age: 83,
     avatar: 'https://cdn.wegow.com/media/artists/aurora/aurora-1632412929.693044.2560x1440.jpg'
-  }
+  } 
+  // names array
+  names: string[] = [
+    'isac',
+    'fidel',
+    'erick',
+    'saul'
+  ];
+  newName = "";
+  // REto con array
+  play = 'one';
+  plays: string[] = [
+    'psone',
+    'ps2',
+    'ps3',
+    'ps4',
+    'ps5',
+  ];
+  newPlay = "";
+  // *ngFor arrays component
+  products: Product[] = [
+    {
+      name: 'Orcas 1',
+      price: 565,
+      image: './assets/img/orca1.jpg',
+      category: 'any'
+    },
+    {
+      name: 'Orcas 2',
+      price: 356,
+      image: './assets/img/orca2.jpg'
+    },
+    {
+      name: 'Orcas 3',
+      price: 34,
+      image: './assets/img/orca3.jpeg'
+    },
+    {
+      name: 'Orcas 4',
+      price: 23,
+      image: './assets/img/orca4.jpeg'
+    },
+    {
+      name: 'Oras 5',
+      price: 34,
+      image: './assets/img/orca5.jpeg'
+    },
+    {
+      name: 'Orcas 6',
+      price: 3434,
+      image: './assets/img/orca6.jpeg'
+    }
+  ]
+  
+
   toggleButton() {
     this.btDisable = !this.btDisable;
   }
@@ -29,5 +84,21 @@ export class AppComponent {
   changeName (event: Event) { 
     const element = event.target as HTMLInputElement;
     this.person.name = element.value;
+  }
+  // names array component
+  addName() {
+    this.names.push(this.newName);
+    this.newName= '';
+  }
+  deleteName( index: number) {
+    this.names.splice(index, 1); 
+  }
+ //plays reto array component 
+  addPlay() {
+    this.plays.push(this.newPlay);
+    this.newPlay= '';
+  }
+  deletePlay(index: number) {
+    this.plays.splice(index, 1);
   }
 }

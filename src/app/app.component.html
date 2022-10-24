@@ -1,3 +1,50 @@
+<h2>*ngFor objs</h2>
+<div>
+    <div *ngFor="let product of products">
+        <img class="imgs" [src]="product.image" alt="orca">
+        <h2>{{ product.price }}</h2>
+        <p>{{ product.name }}</p>
+    </div>
+</div>
+
+
+
+
+<h2>ngFor</h2>
+<input type="text" required  [(ngModel)]="newName" (keyup.enter)="addName() ">
+<button class="green" (click)="addName()">Add name</button>
+<ul>
+    <li *ngFor="let name of names; index as i">
+      {{ i }}{{".- "}}{{ name}}
+    <button class="red" (click)="deleteName(i)">Delete</button>
+    </li>
+</ul>
+<h2>Reto ngFor</h2>
+<div class="reto">
+    <input type="text" required [(ngModel)]="newPlay" (keyup.enter)="addPlay()">
+    <button class="green" (click)="addPlay()">Add Game</button>
+    <ul>
+        <li *ngIf="plays.length === 0"> No more plays</li>
+        <li *ngFor="let play of plays; index as i" >
+            {{ i }} {{".- " }} {{ play }}
+            <button class="red" (click)="deletePlay(i)">Delete</button>
+        </li>
+    </ul> 
+</div>
+
+
+
+<h2>ngIf</h2>
+<input type="text" required  [(ngModel)]="person.name">
+<p *ngIf="person.name  === 'isac'">Soy isac</p>
+<p *ngIf="person.name  === 'fidel' && person.age === 18; else myBlock ">Soy fidel</p>
+<ng-template #myBlock>
+    <p>Soy el block</p>
+</ng-template>
+
+
+
+<br>
 <h2>NgModel</h2>
 <p>Name {{ person.name }}</p>
 <input type="text" required="" #nameInput="ngModel" [(ngModel)]="person.name">
@@ -5,7 +52,7 @@
 <p>Age:{{ person.age }}</p>
 <input type="number" max="18" min="10" required="" #ageInput="ngModel" [(ngModel)]="person.age">
 <p>Valid {{ ageInput.valid }}</p>
-
+<br>
 <h2>Eventos</h2>
 <button [disabled]="btDisable">Send</button>
 <button (click)="toggleButton()">Toggle button</button>
