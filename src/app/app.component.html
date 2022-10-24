@@ -1,7 +1,29 @@
+<h2>NgModel</h2>
+<p>Name {{ person.name }}</p>
+<input type="text" required="" #nameInput="ngModel" [(ngModel)]="person.name">
+
+<p>Age:{{ person.age }}</p>
+<input type="number" max="18" min="10" required="" #ageInput="ngModel" [(ngModel)]="person.age">
+<p>Valid {{ ageInput.valid }}</p>
+
+<h2>Eventos</h2>
+<button [disabled]="btDisable">Send</button>
+<button (click)="toggleButton()">Toggle button</button>
+<p>Edad {{ person.age }}</p>
+<button (click)="increaseAge()">Age ++</button>
+
+<div class="box" (scroll)="onScroll($event)">
+     <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor consectetur nobis placeat velit ipsa libero blanditiis nisi officiis ut recusandae, est inventore, optio odit, repellat aliquid quas. Deleniti, voluptates!
+     </p>
+</div>
+<p>Name {{ person.name }}</p>
+<input type="text" [value]="person.name" (keyup)="changeName($event)">
+
+<br>
 <h2>Propiedades</h2>
 
 <button [disabled]="btDisable">Send</button>
-
 <input type="text" [value]="person.name">
 <progress [value]="age" max="100"></progress>
 <img [src]="myimg" alt="" width="200px">
