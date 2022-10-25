@@ -121,3 +121,31 @@ li {
         }
     }   
 }
+
+.message-error {
+    background: red;
+    color: #ffff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all linear .5s;
+    &.invalid {
+        opacity: 1;
+    }
+}
+
+.tyle {
+    display: grid;
+    grid-column: repeat (2, 1fr );
+}
+
+.line-errror {
+    height: 0;
+    border-bottom: 1px solid;
+    &.invalid {
+        border-color: red;
+    }
+    &.valid {
+        border-color: green;
+    }
+}

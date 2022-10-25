@@ -25,6 +25,11 @@ export class AppComponent {
     'saul'
   ];
   newName = "";
+  box = {
+    width:10,
+    heigth: 10,
+    background: 'red'
+  }
   // REto con array
   play = 'one';
   plays: string[] = [
@@ -42,7 +47,7 @@ export class AppComponent {
       price: 565,
       image: './assets/img/orca1.jpg',
       category: 'Ocean',
-      desciption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
+      desciption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
     },
     {
       name: 'Orcas 2',
@@ -80,7 +85,8 @@ export class AppComponent {
       desciption: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
     }
   ]
-  
+  // init9
+  widthImg = 10;
 
   toggleButton() {
     this.btDisable = !this.btDisable;
@@ -111,5 +117,14 @@ export class AppComponent {
   }
   deletePlay(index: number) {
     this.plays.splice(index, 1);
+  }
+  // Formulario 
+  register = {
+    name:'',
+    email: '',
+    password: ''
+  }
+  onRegister () {
+    console.log(this.register)
   }
 }
